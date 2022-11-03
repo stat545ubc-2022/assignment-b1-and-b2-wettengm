@@ -9,18 +9,26 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+### Function
 
-### Creating Function
-
-
+The function I've created tells you how many grams of CO$_2$ are emitted per 1 kilometer of driving for either a petrol or diesel car. The two pieces of information needed are the miles per gallon (US gallon) and if your car has a petrol or diesel internal combustion engine. 
 
 ```{r}
-co2emission <- function(x, gas = TRUE){
+#' Title
+#'
+#' @param x #Miles per gallon (measured in US gallons)
+#' @param petrol #Variable to indicate if engine of car uses petrol or diesel fuel
+#'
+#' @return # grams of CO2 emitted, on average, per kilometer of driving
+#' @export 
+#'
+#' @examples 
+co2emission <- function(x, petrol = TRUE){
   if(!is.numeric(x)) { 
     stop('This function only works for numeric input!\n',
          'You have provided an object of class: ', class(x)[1])
   }
-  if(gas == TRUE) {
+  if(petrol == TRUE) {
     result <- 8887/x
     paste("Your car emmits, on average,", round(result/1.609, 2), "grams of co2 per km driven")
   } else {
@@ -30,16 +38,16 @@ co2emission <- function(x, gas = TRUE){
 }
 
 
-co2emission(22, gas = TRUE)
+co2emission(33, petrol = FALSE)
 ```
 
-
+### Function Examples
 
 ```{r}
 
 ```
 
-
+### Testing Function
 
 ```{r}
 
