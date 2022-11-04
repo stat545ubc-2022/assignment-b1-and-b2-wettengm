@@ -14,15 +14,20 @@ knitr::opts_chunk$set(echo = TRUE)
 The function I've created tells you how many grams of CO$_2$ are emitted per 1 kilometer of driving for either a petrol or diesel car. The two pieces of information needed are the miles per gallon (US gallon) and if your car has a petrol or diesel internal combustion engine. 
 
 ```{r}
-#' Title
+#'  Amount of CO$_2$ emitted
+#'  
+#'  This functions estimates the amount of CO$_2$ emitted per kilometer driven 
+#'  based on the miles per gallon (US gallon) and the fuel type of your car. 
 #'
-#' @param x #Miles per gallon (measured in US gallons)
-#' @param petrol #Variable to indicate if engine of car uses petrol or diesel fuel
+#' @param x Miles per gallon (measured in US gallons)
+#' @param petrol Variable to indicate if engine of car uses petrol or diesel fuel
 #'
-#' @return # grams of CO2 emitted, on average, per kilometer of driving
+#' @return Grams of CO2 emitted, on average, per kilometer of driving
 #' @export 
 #'
 #' @examples 
+#' co2emission(25, petrol = TRUE)
+#' co2emissions(42, petrol = FALSE)
 co2emission <- function(x, petrol = TRUE){
   if(!is.numeric(x)) { 
     stop('This function only works for numeric input!\n',
@@ -30,10 +35,10 @@ co2emission <- function(x, petrol = TRUE){
   }
   if(petrol == TRUE) {
     result <- 8887/x
-    paste("Your car emmits, on average,", round(result/1.609, 2), "grams of co2 per km driven")
+    paste("Your petrol car emmits, on average,", round(result/1.609, 2), "grams of co2 per km driven")
   } else {
     result2 <- 10180/x
-    paste("Your car emmits, on average,", round(result2/1.609, 2), "grams of co2 per km driven")
+    paste("Your diesel car emmits, on average,", round(result2/1.609, 2), "grams of co2 per km driven")
   }
 }
 
@@ -44,13 +49,17 @@ co2emission(33, petrol = FALSE)
 ### Function Examples
 
 ```{r}
-
+# Comparing that although two cars may have same mpg, 
+#   emissions will differ based on engine fuel statement 
+co2emission(32, petrol = TRUE)
+co2emission(32, petrol = FALSE)
 ```
 
 ### Testing Function
 
 ```{r}
-
+# petrol should not equal diesel
+# 33 mpg for petrol should equal 167.37
 ```
 
 
