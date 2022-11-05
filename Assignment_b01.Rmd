@@ -48,17 +48,24 @@ co2emission(33, petrol = FALSE)
 
 ### Function Examples
 
-```{r}
+```{r, error = TRUE}
 # Comparing that although two cars may have same mpg, 
 #   emissions will differ based on engine fuel statement 
 co2emission(32, petrol = TRUE)
 co2emission(32, petrol = FALSE)
+
+# Using a non-numeric input will not work
+co2emission("car", petrol = FALSE)
+
+# Since this function is designed to tell the user about their car mpg,
+# A vector will not work in the imput
 ```
 
 ### Testing Function
 
 ```{r}
 # petrol should not equal diesel
+testthat()
 # 33 mpg for petrol should equal 167.37
 ```
 
