@@ -57,16 +57,19 @@ co2emission(32, petrol = FALSE)
 # Using a non-numeric input will not work
 co2emission("car", petrol = FALSE)
 
-# Since this function is designed to tell the user about their car mpg,
-# A vector will not work in the imput
+# A vector will work, as long as the cars are all the same fuel type.
+cars <- c(22, 33, 44)
+co2emission(cars, petrol = TRUE)
 ```
 
 ### Testing Function
 
 ```{r}
-# petrol should not equal diesel
-testthat()
-# 33 mpg for petrol should equal 167.37
+# A petrol car should not have same Co2 emissions as diesel car with same mpg
+
+# 33 mpg for a petrol car should equal 167.37
+
+# Should bring about an error message
 ```
 
 
