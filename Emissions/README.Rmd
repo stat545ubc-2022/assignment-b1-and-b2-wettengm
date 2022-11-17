@@ -41,3 +41,8 @@ co2emission(33, petrol = TRUE)
 co2emission(33, petrol = FALSE)
 ```
 
+You can also have a vector of cars' mpg as input for the function. As long as the cars are all the same fuel type.
+```{r}
+list <- c(22,33,44)
+co2emission(list, petrol = TRUE)
+```
