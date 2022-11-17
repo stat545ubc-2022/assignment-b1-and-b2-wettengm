@@ -2,9 +2,9 @@ Package: Emissions
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
+    person("Marc", "Wettengel", , "marc.wettengel@stat.ubc.ca", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: This package contains tools to help determine the average carbon dioxide emitted per kilometer of distance travelled, for various transportation methods. Currently, only petrol and diesel passenger vehicles are supported.  
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
