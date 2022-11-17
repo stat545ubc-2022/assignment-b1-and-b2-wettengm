@@ -27,7 +27,7 @@ You can install the development version of Emissions from [GitHub](https://githu
 
 ``` {r}
 # install.packages("devtools")
-devtools::install_github("stat545ubc-2022/assignment-b1-and-b2-wettengm/Emissions")
+devtools::install_github("stat545ubc-2022/assignment-b1-and-b2-wettengm/Emissions", ref = "0.2.0")
 ```
 
 ## Example
