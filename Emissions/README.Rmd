@@ -1,4 +1,5 @@
 ---
+title: Emissions package and function description 
 output: github_document
 ---
 
@@ -18,38 +19,25 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of Emissions is to ...
+The goal of the `Emissions` package is to include tools to determine the amount of carbon dioxide emitted per km distance for various transportation methods. Currently, petrol and diesel cars are supported in this package via teh `co2emssion` function. 
 
 ## Installation
 
 You can install the development version of Emissions from [GitHub](https://github.com/) with:
 
-``` r
+``` {r}
 # install.packages("devtools")
 devtools::install_github("stat545ubc-2022/assignment-b1-and-b2-wettengm/Emissions")
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows you how to use the `co2emisson` function within the package:
 
 ```{r example}
 library(Emissions)
-## basic example code
+# Comparing CO2 emissions between petrol and diesel cars with same mpg (US gallons)
+co2emission(33, petrol = TRUE)
+co2emission(33, petrol = FALSE)
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
-
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/v1/examples>.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.

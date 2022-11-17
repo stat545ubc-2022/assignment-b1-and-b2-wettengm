@@ -1,6 +1,6 @@
-#'  Amount of CO$_2$ emitted per km 
+#'  @title: Amount of Carbon Dioxide emitted per km 
 #'  
-#'  This functions estimates the amount of CO$_2$ emitted (in grams) per kilometer driven 
+#' @Description: This functions estimates the amount of Carbon Dioxide emitted (in grams) per kilometer driven 
 #'  based on the miles per gallon (US gallon) and the fuel type of your car. 
 #'
 #' @param x Miles per gallon (measured in US gallons)
