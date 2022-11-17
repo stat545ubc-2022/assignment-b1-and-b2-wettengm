@@ -1,4 +1,4 @@
-#'  @title: Amount of Carbon Dioxide emitted per km 
+#' @title: Amount of Carbon Dioxide emitted per km 
 #'  
 #' @Description: This functions estimates the amount of Carbon Dioxide emitted (in grams) per kilometer driven 
 #'  based on the miles per gallon (US gallon) and the fuel type of your car. 
