@@ -18,13 +18,13 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of Emissions is to ...
+The goal of the Emissions package is to include tools to determine the amount of carbon dioxide emitted per km distance for various transportation methods. Currently, petrol and diesel cars are supported in this package. 
 
 ## Installation
 
 You can install the development version of Emissions from [GitHub](https://github.com/) with:
 
-``` r
+``` {r}
 # install.packages("devtools")
 devtools::install_github("stat545ubc-2022/assignment-b1-and-b2-wettengm/Emissions")
 ```
@@ -35,7 +35,15 @@ This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
 library(Emissions)
-## basic example code
+# Comparing CO2 emssions between petrol and diesel cars with same mpg (US gallons)
+co2emission(33, petrol = TRUE)
+co2emission(33, petrol = FALSE)
+```
+
+Additionally, 
+
+```{r}
+
 ```
 
 What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
