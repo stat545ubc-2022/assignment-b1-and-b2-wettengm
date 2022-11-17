@@ -1,1 +1,26 @@
-# Introduction 
+# STAT 545B: Building functions and R packages
+
+## Introduction 
+This repository contains code to reproduce a two-part assignment for STAT545B. Part [B01](https://stat545.stat.ubc.ca/assignments/assignment-b1/) highlights function writing and proper testing and part [B02](https://stat545.stat.ubc.ca/assignments/assignment-b2/) focuses on taking our part B01 function and creating an R package with proper documentation with it. 
+
+
+## Requirements
+The `tidyverse`, `testthat` and the `devtools` packages are required for completing part B01 and B02. To install the `Emissions` package, which wraps the `co2emission()` function created in part B01, you can use the command:
+
+```{r}
+devtools::install_github("stat545ubc-2022/assignment-b1-and-b2-wettengm/Emissions")
+```
+
+## Repository navigation
+
+The Assignment_b01.Rmd file contains R code and explanations to the `co2emission()` function. The file also contains examples on how to use the function as well as tests using the `test_that()` command to evaluate function performance. 
+  
+The `Emissions` folder contains: 
+
+- DESCRIPTION: package metadata
+- LICENSE (and LICENSE.md): package license
+- man/ directory: function documentation
+- NAMESPACE: functions intended to be used by a package user 
+- R/ directory: function code
+- README.Rmd (and README.md): further package information
+- tests/ directory: function tests
