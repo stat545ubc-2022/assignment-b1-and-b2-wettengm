@@ -11,7 +11,7 @@
 #'
 #' @examples 
 #' co2emission(25, petrol = TRUE)
-#' co2emissions(42, petrol = FALSE)
+#' co2emission(42, petrol = FALSE)
 co2emission <- function(x, petrol = TRUE){
   if(!is.numeric(x)) { 
     stop('This function only works for numeric input!\n',
