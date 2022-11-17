@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of the `Emissions` package is to include tools to determine the amount of carbon dioxide emitted per km distance for various transportation methods. Currently, petrol and diesel passenger cars are supported in this package via the `co2emssion` function. 
+The `Emissions` package includes tools to determine the amount of carbon dioxide emitted per kilometer distance traveled for various transportation methods. Currently, petrol and diesel passenger cars are supported in this package via the `co2emssion` function. 
 
 ## Installation
 
