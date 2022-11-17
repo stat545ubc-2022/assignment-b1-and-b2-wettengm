@@ -10,8 +10,8 @@ Emissions package and function description
 
 The goal of the `Emissions` package is to include tools to determine the
 amount of carbon dioxide emitted per km distance for various
-transportation methods. Currently, petrol and diesel cars are supported
-in this package via teh `co2emssion` function.
+transportation methods. Currently, petrol and diesel passenger cars are
+supported in this package via the `co2emssion` function.
 
 ## Installation
 
@@ -22,13 +22,13 @@ You can install the development version of Emissions from
 # install.packages("devtools")
 devtools::install_github("stat545ubc-2022/assignment-b1-and-b2-wettengm/Emissions")
 #> Downloading GitHub repo stat545ubc-2022/assignment-b1-and-b2-wettengm@HEAD
-#> * checking for file ‘/private/var/folders/ql/1drt0gm11wz0_kdzzs5dfz0c0000gn/T/Rtmp0Y9HUH/remotesaf5a5296be95/stat545ubc-2022-assignment-b1-and-b2-wettengm-ebcf427/Emissions/DESCRIPTION’ ... OK
+#> * checking for file ‘/private/var/folders/ql/1drt0gm11wz0_kdzzs5dfz0c0000gn/T/RtmpV63oSh/remotesb1196b813bce/stat545ubc-2022-assignment-b1-and-b2-wettengm-46d7ee2/Emissions/DESCRIPTION’ ... OK
 #> * preparing ‘Emissions’:
 #> * checking DESCRIPTION meta-information ... OK
 #> * checking for LF line-endings in source and make files and shell scripts
 #> * checking for empty or unneeded directories
 #> * building ‘Emissions_0.0.0.9000.tar.gz’
-#> Installing package into '/private/var/folders/ql/1drt0gm11wz0_kdzzs5dfz0c0000gn/T/RtmpQnIAwy/temp_libpath16d6638233e2a'
+#> Installing package into '/private/var/folders/ql/1drt0gm11wz0_kdzzs5dfz0c0000gn/T/RtmpQnIAwy/temp_libpath16d661a0eb7a1'
 #> (as 'lib' is unspecified)
 ```
 
