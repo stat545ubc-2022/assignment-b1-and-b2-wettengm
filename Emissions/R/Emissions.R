@@ -25,3 +25,4 @@ co2emission <- function(x, petrol = TRUE){
     paste("Your diesel car emmits, on average,", round(result2/1.609, 2), "grams of co2 per km driven")
   }
 }
+
