@@ -1,5 +1,5 @@
 Package: Emissions
-Title: What the Package Does (One Line, Title Case)
+Title: Average CO2 emissions per kilometer distance
 Version: 0.0.0.9000
 Authors@R: 
     person("Marc", "Wettengel", , "marc.wettengel@stat.ubc.ca", role = c("aut", "cre"),
