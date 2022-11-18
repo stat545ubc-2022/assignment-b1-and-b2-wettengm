@@ -2,7 +2,7 @@
 % Please edit documentation in R/Emissions.R
 \name{co2emission}
 \alias{co2emission}
-\title{@title: Amount of Carbon Dioxide emitted per km}
+\title{: Amount of Carbon Dioxide emitted per km}
 \usage{
 co2emission(x, petrol = TRUE)
 }
@@ -15,7 +15,8 @@ co2emission(x, petrol = TRUE)
 Grams of CO2 emitted, on average, per kilometer of driving
 }
 \description{
-@title: Amount of Carbon Dioxide emitted per km
+: This functions estimates the amount of Carbon Dioxide emitted (in grams) per kilometer driven
+based on the miles per gallon (US gallon) and the fuel type of your car.
 }
 \examples{
 co2emission(25, petrol = TRUE)
