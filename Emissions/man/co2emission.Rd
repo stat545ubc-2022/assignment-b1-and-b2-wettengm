@@ -7,12 +7,12 @@
 co2emission(x, petrol = TRUE)
 }
 \arguments{
-\item{x}{Miles per gallon (measured in US gallons)}
+\item{x}{An object of class "numeric". This parameter represents miles per gallon (measured in US gallons) of vehicle}
 
-\item{petrol}{Variable to indicate if engine of car uses petrol or diesel fuel}
+\item{petrol}{A conditional statement to indicate if engine of car uses petrol or diesel fuel.}
 }
 \value{
-Grams of CO2 emitted, on average, per kilometer of driving
+An object of class "numeric". Grams of CO2 emitted, on average, per kilometer of driving.
 }
 \description{
 : This functions estimates the amount of Carbon Dioxide emitted (in grams) per kilometer driven
