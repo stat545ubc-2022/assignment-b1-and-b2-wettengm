@@ -1,6 +1,6 @@
-#' @title: Amount of Carbon Dioxide emitted per km 
+#' @title Amount of Carbon Dioxide emitted per kilometer traveled
 #'  
-#' @description: This functions estimates the amount of Carbon Dioxide emitted (in grams) per kilometer driven 
+#' @description This functions estimates the amount of Carbon Dioxide emitted (in grams) per kilometer driven 
 #'  based on the miles per gallon (US gallon) and the fuel type of your car. 
 #'
 #' @param x An object of class "numeric". This parameter represents miles per gallon (measured in US gallons) of vehicle
@@ -12,6 +12,9 @@
 #' @examples 
 #' co2emission(25, petrol = TRUE)
 #' co2emission(42, petrol = FALSE)
+#' 
+#' vector <- c(10, 20, 30)
+#' co2emission(vector, petrol = FALSE)
 co2emission <- function(x, petrol = TRUE) {
   if(!is.numeric(x)) { 
     stop('This function only works for numeric input!\n',
