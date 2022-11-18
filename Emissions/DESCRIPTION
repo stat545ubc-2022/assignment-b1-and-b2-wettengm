@@ -1,9 +1,8 @@
 Package: Emissions
-Title: Average CO2 emissions per kilometer distance
+Title: Average CO2 emissions per kilometer traveled 
 Version: 0.0.0.9000
 Authors@R: 
-    person("Marc", "Wettengel", , "marc.wettengel@stat.ubc.ca", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person("Marc", "Wettengel", , "marc.wettengel@stat.ubc.ca", role = c("aut", "cre"))
 Description: This package contains tools to help determine the average carbon dioxide emitted per kilometer of distance travelled, for various transportation methods. Currently, only petrol and diesel passenger vehicles are supported.  
 License: MIT + file LICENSE
 Encoding: UTF-8
