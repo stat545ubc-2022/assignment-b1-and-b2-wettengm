@@ -3,10 +3,10 @@
 #' @description: This functions estimates the amount of Carbon Dioxide emitted (in grams) per kilometer driven 
 #'  based on the miles per gallon (US gallon) and the fuel type of your car. 
 #'
-#' @param x Miles per gallon (measured in US gallons)
-#' @param petrol Variable to indicate if engine of car uses petrol or diesel fuel
+#' @param x An object of class "numeric". This parameter represents miles per gallon (measured in US gallons) of vehicle
+#' @param petrol A conditional statement to indicate if engine of car uses petrol or diesel fuel.
 #'
-#' @return Grams of CO2 emitted, on average, per kilometer of driving
+#' @return An object of class "numeric". Grams of CO2 emitted, on average, per kilometer of driving.
 #' @export 
 #'
 #' @examples 
