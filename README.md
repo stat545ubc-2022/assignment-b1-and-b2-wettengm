@@ -7,15 +7,11 @@ This repository contains code to reproduce a two-part assignment for STAT545B. P
 
 The Assignment_b01.Rmd file contains R code and explanations to the `co2emission()` function. The file also contains examples on how to use the function as well as tests using the `test_that()` command to evaluate function performance. 
   
-The `Emissions` folder contains: 
+The `Emissions` folder contains three sub folders: 
 
-- DESCRIPTION: package metadata
-- LICENSE (and LICENSE.md): package license
-- man/ directory: function documentation
-- NAMESPACE: functions intended to be used by a package user 
-- R/ directory: function code
-- README.Rmd (and README.md): further package information
-- tests/ directory: function tests
+- man: Function documentation
+- R: Function code
+- tests: Function tests
 
 
 ## Requirements
